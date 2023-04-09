@@ -26,5 +26,9 @@ go mod tidy
 go test -v -timeout 30m
 ```
 
+# TODO
 
+* Fix ip address outputs
+* Restructure / Divide up tests
+* Test with public ip4 off / ssh fail
 
