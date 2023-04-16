@@ -60,7 +60,3 @@ func TestTerraformAsgWeb(t *testing.T) {
 		fmt.Println("Public IPs have not been assigned. Skipping test...")
 	}
 }
-
-// Test ssh to ec2 instance
-// Test http with lb url
-// TODO Test with public ip4 off

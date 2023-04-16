@@ -7,6 +7,7 @@ N.B. These tests will recreate and then destroy the defined resources in AWS.
 
 ```bash
 cd test/
+export GO111MODULE=on
 go mod init test
 go mod tidy
 go test -v -timeout 30m
@@ -28,7 +29,7 @@ go test -v -timeout 30m
 
 # TODO
 
-* Fix ip address outputs
-* Restructure / Divide up tests
-* Test with public ip4 off / ssh fail
+* Fix ip address outputs - Fix with depends_on in aws_instances data resources.
+* Restructure / Divide up tests, ideally; setup, test1..n, teardown
+* Test with public ip4 off / ssh fail - Doesn't work with public IP off. Do I need a NAT Getweay?
 

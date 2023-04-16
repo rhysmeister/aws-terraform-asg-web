@@ -12,4 +12,8 @@ data "aws_instances" "web_instances" {
   instance_tags = {
     Name = "aws-web"
   }
+
+  depends_on = [
+    aws_autoscaling_group.asg
+  ]
 }
