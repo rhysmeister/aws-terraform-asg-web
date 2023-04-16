@@ -31,5 +31,5 @@ go test -v -timeout 30m
 
 * Fix ip address outputs - Fix with depends_on in aws_instances data resources.
 * Restructure / Divide up tests, ideally; setup, test1..n, teardown
-* Test with public ip4 off / ssh fail - Doesn't work with public IP off. Do I need a NAT Getweay?
+* Test with public ip4 off / ssh fail - Doesn't work with public IP off. 
 
